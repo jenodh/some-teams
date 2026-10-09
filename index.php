@@ -2,4 +2,8 @@
 
 require __DIR__ . '/data.php';
 
-var_dump($teams);
+foreach ($teams as $team => $teamInfo) { ?>
+    <h2><?php echo $team; ?></h2>
+<?php
+}
+?>
