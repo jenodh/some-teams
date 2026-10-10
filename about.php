@@ -1,8 +1,14 @@
 <main>
     <h1>A little about me</h1>
     <section>
-        <h2>Hi, I'm Jenny!</h2>
-        <p>I'm a web development student at Yrgo in Gothenburg, Sweden. Before starting my journey into web development, I worked with art direction, graphic design and digital communication.</p>
+        <div>
+            <h2>Hi, I'm Jenny!</h2>
+            <p>I'm a web development student at Yrgo in Gothenburg, Sweden. Before starting my journey into web development, I worked with art direction, graphic design and digital communication.</p>
+        </div>
+
+        <div>
+            <img src="/images/portrait.svg" alt="portrait illustration of the author Jenny">
+        </div>
     </section>
 
     <section>
