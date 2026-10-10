@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/header.php';
+?>
+
 <main>
     <h1>A little about me</h1>
     <section>
@@ -7,7 +11,7 @@
         </div>
 
         <div>
-            <img src="/images/portrait.svg" alt="portrait illustration of the author Jenny"/>
+            <img src="/images/portrait.svg" alt="portrait illustration of the author Jenny" />
         </div>
     </section>
 
