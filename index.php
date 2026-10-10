@@ -1,4 +1,6 @@
 <?php
+$pageTitle = 'Home | Some Teams';
+
 require __DIR__ . '/header.php';
 require __DIR__ . '/data.php';
 ?>
