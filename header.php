@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Some Teams</title>
+    <title><?php echo $pageTitle; ?></title>
 </head>
 
 <body>

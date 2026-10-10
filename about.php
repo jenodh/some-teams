@@ -1,4 +1,6 @@
 <?php
+$pageTitle = 'About | Some Teams';
+
 require __DIR__ . '/header.php';
 ?>
 
