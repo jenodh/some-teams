@@ -14,10 +14,8 @@
 
         <nav>
             <ul>
-                <li>
-                    <a href="/index.php">Home</a>
-                    <a href="/about.php">About</a>
-                </li>
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="/about.php">About</a></li>
             </ul>
         </nav>
     </header>
