@@ -25,3 +25,7 @@ require __DIR__ . '/data.php';
         <?php endforeach; ?>
     </section>
 </main>
+
+<?php
+require __DIR__ . '/footer.php';
+?>
