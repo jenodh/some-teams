@@ -7,7 +7,7 @@
         </div>
 
         <div>
-            <img src="/images/portrait.svg" alt="portrait illustration of the author Jenny">
+            <img src="/images/portrait.svg" alt="portrait illustration of the author Jenny"/>
         </div>
     </section>
 
