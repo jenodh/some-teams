@@ -26,3 +26,7 @@ require __DIR__ . '/header.php';
         <p>This website was created as a part of my web development studies at Yrgo. It's a chance to put my new skills into practice while learning more about PHP, working with data and building reusable components.</p>
     </section>
 </main>
+
+<?php
+require __DIR__ . '/footer.php';
+?>
