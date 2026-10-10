@@ -10,12 +10,12 @@
 <body>
 
     <header>
-        <a href="/index.php">Some Teams</a>
+        <a href="index.php">Some Teams</a>
 
         <nav>
             <ul>
-                <li><a href="/index.php">Home</a></li>
-                <li><a href="/about.php">About</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
             </ul>
         </nav>
     </header>
