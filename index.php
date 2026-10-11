@@ -6,9 +6,8 @@ require __DIR__ . '/data.php';
 ?>
 
 <main>
-    <section>
-        <h1>Women's Football Teams</h1>
-
+    <h1>Women's Football Teams</h1>
+    <section class="teams-card-grid">
         <?php foreach ($teams as $team => $teamInfo) : ?>
             <article class="team-card">
                 <header class="team-card-header">
@@ -28,7 +27,6 @@ require __DIR__ . '/data.php';
                 </footer>
             </article>
         <?php endforeach; ?>
-
     </section>
 </main>
 
