@@ -8,7 +8,10 @@ require __DIR__ . '/data.php';
 <main>
 
     <section class="page-header">
-        <h1>Women's Football Teams</h1>
+        <div>
+            <h1>Women's Football Teams</h1>
+            <h2>Round of 16</h2>
+        </div>
     </section>
 
 
@@ -22,7 +25,7 @@ require __DIR__ . '/data.php';
 
                 <header class="team-card-header">
                     <img src="<?php echo $teamInfo['logo_uefa']; ?>" alt="<?php echo $team; ?> logo">
-                    <h2><?php echo $team; ?></h2>
+                    <h3><?php echo $team; ?></h3>
                 </header>
 
                 <div class="team-card-info">
