@@ -6,23 +6,40 @@ require __DIR__ . '/data.php';
 ?>
 
 <main>
-    <section>
-        <h1>Women's Football Teams</h1>
+
+    <section class="page-header">
+        <div>
+            <h1>Women's Football Teams</h1>
+            <h2>Round of 16</h2>
+        </div>
+    </section>
+
+
+    <section class="teams-card-grid">
         <?php foreach ($teams as $team => $teamInfo) : ?>
-            <article>
-                <header>
+            <article class="team-card">
+
+                <div class="card-tags">
+                    <span class="tag">UEFA ranking #<?php echo $teamInfo['uefa-coefficient-ranking']; ?></span>
+                </div>
+
+                <header class="team-card-header">
                     <img src="<?php echo $teamInfo['logo_uefa']; ?>" alt="<?php echo $team; ?> logo">
-                    <h2><?php echo $team; ?></h2>
+                    <h3><?php echo $team; ?></h3>
                 </header>
-                <div>
-                    <p>League: <?php echo $teamInfo['league']; ?></p>
-                    <p>UEFA ranking: <?php echo $teamInfo['uefa-coefficient-ranking']; ?></p>
-                    <?php if ($teamInfo['league-position'] !== null) :  ?>
+
+                <div class="team-card-info">
+                    <p><?php echo $teamInfo['league']; ?></p>
+                    <p>City: <?php echo $teamInfo['city']; ?></p>
+                    <?php if ($teamInfo['league-position'] !== null) : ?>
                         <p>League position: <?php echo $teamInfo['league-position']; ?></p>
                     <?php endif; ?>
-                    <p>City: <?php echo $teamInfo['city']; ?></p>
-                    <a href="<?php echo $teamInfo['url']; ?>" target="_blank">Visit website</a>
                 </div>
+
+                <footer class="team-card-footer">
+                    <a href="<?php echo $teamInfo['url']; ?>" target="_blank" rel="noopener noreferrer">Visit website</a>
+                </footer>
+
             </article>
         <?php endforeach; ?>
     </section>
