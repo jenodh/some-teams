@@ -2,10 +2,12 @@
 :root {
   --color-primary: #6a7f17;
   --color-secondary: #889945;
+  --color-accent: #d5fe00;
   --color-text: #2c2c2c;
   --color-background: #f4f3f2;
-  --color-card-bg: #ffffff;
   --color-border: #deded8;
+  --color-white: #ffffff;
+  --color-black: #000000;
 
   --border-radius: 8px;
 }
@@ -38,7 +40,7 @@ body {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 24px 100px;
 }
 
 h1 {
@@ -51,8 +53,8 @@ h1 {
 .header-site {
   position: sticky;
   top: 0;
-  background-color: #000;
-  color: #ffffff;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .header-main {
@@ -86,21 +88,17 @@ h1 {
 .main-navigation a {
   display: block;
   padding: 16px 0;
-  color: #ffffff;
+  color: var(--color-white);
   text-decoration: none;
 }
 
 .main-navigation a:hover {
-  color: #d5fe00;
+  color: var(--color-accent);
 }
 
 /* Page header */
 .page-header {
   padding: 48px 0 32px;
-}
-
-.page-header-content {
-  width: 100%;
 }
 
 /* Homepage */
@@ -110,7 +108,6 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
-  margin-bottom: 120px;
 }
 
 /* Team card */
@@ -120,7 +117,7 @@ h1 {
   align-items: stretch;
   min-width: 0;
   padding: 20px;
-  background-color: var(--color-card-bg);
+  background-color: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
 }
@@ -199,4 +196,52 @@ h1 {
 .team-card-footer a:hover {
   color: var(--color-secondary);
   text-decoration: underline;
+}
+
+/* About page */
+.about-intro {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 48px 0 80px;
+}
+
+.about-intro h2 {
+  margin-bottom: 24px;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.about-intro p {
+  font-size: 1.9rem;
+  line-height: 1.3;
+}
+
+.about-portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 360px;
+  padding: 32px;
+  border-radius: var(--border-radius);
+}
+
+.about-portrait img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  padding: 40px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
 }
